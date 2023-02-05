@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Gotham;
+  src: url(./assets/fonts/GothamBook.ttf);
+}
+@font-face {
+  font-family: GothamMedium;
+  src: url(./assets/fonts/GothamMedium.ttf);
+}
+body {
+  font-family: 'Gotham', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.logo {
+  display: block;
+  width: 140px;
+  height: 30px;
+  margin: 0 auto;
+  max-width: 100%;
+  background: url(./src/assets/img/watchshop-logo.svg) no-repeat left center;
+  background-size: contain;
+}
+.nav-item {
+  font-weight: 600;
+  font-size: 14px;
+}
+.dropdown-item {
+  font-family: 'Gotham', sans-serif !important;
+  font-size: 14px;
+}
+.bienvenidos h1 {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.carrito{
+  margin-left: 20px;
+  font-size: 14px;
+}
