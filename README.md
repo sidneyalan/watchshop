@@ -21,6 +21,10 @@ Se creron los componentes:
 Navbar con cart
 Catálogo
 Detalle de producto
+<<<<<<< HEAD
+=======
+
+>>>>>>> 237e632cbffe2085e14b501234aa29f418005f6a
 
 
 
