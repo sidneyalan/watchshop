@@ -1,23 +1,22 @@
-import { useEffect } from 'react'
+import React from 'react';
 import ItemDetail from "../components/ItemDetail";
 import { useState } from "react";
 import Products from "../products.json";
 import { useParams } from "react-router";
-
+import {useEffect} from 'react';
 
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
   const [relog, setRelog] = useState({});
-
   const getProduct = () => {
     return new Promise((resolve, reject) => {
       if (Products.length === 0) {
         reject(new Error("No hay Porductos para mostrar"));
       }
       setTimeout(() => {
-    
-        resolve(Products);
+        const relogFilter = Products.find((relog) => relog.id == id);
+        resolve(relogFilter);
       }, 2000);
     });
   };
@@ -25,21 +24,18 @@ const ItemDetailContainer = () => {
   async function fetchingProducts() {
     try {
       const productsFetched = await getProduct();
-      setRelog(productsFetched.find((item)=> item.id == id));
+      setRelog(productsFetched);
     } catch (err) {
       console.log(err);
     }
   }
-//console.log(relog)
+
   useEffect(()=>{
     fetchingProducts()
+
   },[id])
-  return (
-    <>
-    <ItemDetail relog={relog}/>
-    
-    </>
-  )
+  return <ItemDetail relog={relog} />;
 };
 
 export default ItemDetailContainer;
+

@@ -1,13 +1,13 @@
 #No mostar los archivos de pruebas
-componente1.jsx
-componente2.jsx
-ejercicios.jsx
 Api.jsx
 backup.jsx
 pruebas.jsx
+copiaItem.jsx
+copiaItemDetail.jsx
 copiaNavbar.jsx
 Home.jsx
-
+containers/copiaItemDetailContainer.jsx
+containers/copiaListContainer.jsx
 # Logs
 logs
 *.log

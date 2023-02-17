@@ -1,7 +1,6 @@
-
 ## WhatchShop
 
-Primera entrega del curso de REACT CODERHOUSE.
+Segunda Pre-entrega del curso de REACT CODERHOUSE.
 
 Profesor: Omar Jesús Maniás
 Alumno: Sidney Alan Santana Teixeira
@@ -16,13 +15,13 @@ WhatchShop es un ecommerce dedicado a la venta de relog de marcas de alta gama, 
               -> Seiko
 
 
-Para esa primer entrega se crearon 3 componentes:
-```
-<Navbar />
-<ItemListContainer greeting={"Bienvenidos a WhatchShop"} />
-y <CartWidget />
-```
-Ademas se implemento Bootstrap 5 y se crearon estilos personalizados para el navbar.
+Para la segunda pre entrega se configura en App.js el routing usando un BrowserRouter de la aplicación con react-router-dom
+
+Se creron los componentes:
+Navbar con cart
+Catálogo
+Detalle de producto
+
 
 
 

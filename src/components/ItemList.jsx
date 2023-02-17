@@ -3,22 +3,26 @@ import Item from "./Item";
 
 
 
-const ItemList = ({ relog }) => {
+
+const ItemList = ({ items }) => {
   return (
     <>
-      <div className="container bg-danger">
-        {relog?.map((relog) => (
+
+        {items.map((relog) => (
+          
           <Item
             key={relog.id}
             id={relog.id}
-            name={relog.name}
+            title={relog.title}
             description={relog.description}
             price={relog.price}
             stock={relog.stock}
             category={relog.category}
+            url={relog.url}
           />
+            
         ))}
-      </div>
+
 
 
   </>
