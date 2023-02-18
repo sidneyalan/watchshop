@@ -11,6 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      <img src='./src/assets/img/banner.jpg' width={"100%"} />
       <Routes>
       <Route exact path="/" element={<ItemListContainer greeting="Bienvenidos a WhatchShop" />}/>
         <Route exact path="/catalogue" element={<ItemListContainer />} />

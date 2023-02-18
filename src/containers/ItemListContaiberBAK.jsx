@@ -1,13 +1,13 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 
-import React, { useEffect, useState } from 'react'
 import ItemList from "../components/ItemList";
 import Products from "../products.json";
 import { useParams } from "react-router-dom";
 
 
 
-const ItemListContainer = () => {
+const ItemListContainer = ({ greeting }) => {
+  const [items, setItems] = useState([])
   const { category } = useParams();
 
   const getProducts = () => {
@@ -24,21 +24,27 @@ const ItemListContainer = () => {
   async function fetchingProducts() {
     try {
       const datosFetched = await getProducts();
+      setItems(datosFetched)
     } catch (err) {
       console.log(err);
     }
   }
+  useEffect(()=>{
 
-  fetchingProducts()
+    fetchingProducts()
+  },[])
 
-  const catFilter = Products.filter((reloj) => reloj.category === category);
+
+  
   return (
-    <div className='container text-center'>
-
-      <h3>Relog por categoria</h3>
-
-      {category ? <ItemList reloj={catFilter} /> : <ItemList reloj={Products} />}
+  <div className='container text-center'>
+    <div className='row'>
+      <div className='col-md-12'>
+        <h2 className="display-7">{greeting}</h2>
+      </div>
     </div>
+    <ItemList items={items} /> 
+  </div>
   );
 };
 

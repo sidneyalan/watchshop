@@ -6,8 +6,9 @@ copiaItem.jsx
 copiaItemDetail.jsx
 copiaNavbar.jsx
 Home.jsx
-containers/copiaItemDetailContainer.jsx
-containers/copiaListContainer.jsx
+./containers/copiaItemDetailContainer.jsx
+./containers/copiaListContainer.jsx
+otracopia.jsx
 # Logs
 logs
 *.log

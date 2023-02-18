@@ -30,7 +30,6 @@ const ItemDetailContainer = () => {
       console.log(err);
     }
   }
-//console.log(relog)
   useEffect(()=>{
     fetchingProducts()
   },[id])

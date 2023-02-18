@@ -7,9 +7,7 @@ import Item from "./Item";
 const ItemList = ({ items }) => {
   return (
     <>
-
         {items.map((relog) => (
-          
           <Item
             key={relog.id}
             id={relog.id}

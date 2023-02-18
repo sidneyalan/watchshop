@@ -8,6 +8,7 @@ import { useParams } from "react-router-dom";
 
 const ItemListContainer = ({ greeting }) => {
   const [items, setItems] = useState([])
+  
   const { category } = useParams();
 
   const getProducts = () => {
@@ -34,17 +35,17 @@ const ItemListContainer = ({ greeting }) => {
     fetchingProducts()
   },[])
 
-
+  const catFilter = Products.filter((items) => items.category === category);
   
   return (
   <div className='container text-center'>
     <div className='row'>
       <div className='col-md-12'>
         <h2 className="animate__animated animate__backInDown">{greeting}</h2>
-        <img src='./src/assets/img/banner.jpg' width={"100%"} />
       </div>
     </div>
-    <ItemList items={items} /> 
+    {category ? <ItemList items={catFilter} /> : <ItemList items={items} />}
+    
   </div>
   );
 };

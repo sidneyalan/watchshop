@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
- 
 const ItemDetail = ({ relog, stock }) => {
-    //console.log(relog)
       return (
   
            
@@ -25,7 +23,7 @@ const ItemDetail = ({ relog, stock }) => {
             <h3 className="font-weight-semi-bold mb-4">{relog.price}</h3>
             <p className="mb-4">{relog.description}</p>
             <p className="mb-4">Stock: {relog.stock}</p>
-            <ItemCount />
+            <ItemCount stock = {relog.stock} />
             
          
           </div>

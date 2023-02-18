@@ -2,9 +2,10 @@ import React from 'react'
 import { useState } from 'react';
 import ItemDetail from './ItemDetail';
 
-const ItemCount = (stock) => {
+const ItemCount = ({stock}) => {
 
     const [items, setItems] = useState(1);
+    
     const masStock = () =>{
       if(items < stock){
         setItems(items + 1);
@@ -12,7 +13,7 @@ const ItemCount = (stock) => {
     }
   
     const menosStock = () =>{
-      if(items > stock)
+      if(items > 1)
       setItems(items - 1);
     }
   
