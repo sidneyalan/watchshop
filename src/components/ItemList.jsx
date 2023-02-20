@@ -6,7 +6,8 @@ import Item from "./Item";
 
 const ItemList = ({ items }) => {
   return (
-    <>
+<> 
+     <div className="itemlist">
         {items.map((relog) => (
           <Item
             key={relog.id}
@@ -21,7 +22,7 @@ const ItemList = ({ items }) => {
             
         ))}
 
-
+</div>
 
   </>
   );

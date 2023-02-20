@@ -38,15 +38,17 @@ const ItemListContainer = ({ greeting }) => {
   const catFilter = Products.filter((items) => items.category === category);
   
   return (
+    <>
   <div className='container text-center'>
     <div className='row'>
       <div className='col-md-12'>
-        <h2 className="animate__animated animate__backInDown">{greeting}</h2>
+        <h2>{greeting}</h2>
+        
       </div>
     </div>
-    {category ? <ItemList items={catFilter} /> : <ItemList items={items} />}
-    
+    {category ? <ItemList items={catFilter} />  : <ItemList items={items} />}
   </div>
+  </>
   );
 };
 

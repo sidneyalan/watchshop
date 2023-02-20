@@ -5,7 +5,7 @@
 	"id": 1,
 	"title": "Reloj Cronógrafo para Hombre Casio Sports Gear W-800H-1AVES",
         "description": "Marca:Casio, Alarma:Sí, Analógico/Digital:Digital, Luz trasera:Sí, Profundiad aproximada de la caja:14.00mm, Material de la caja:Plástico/Resina, Forma de la caja:Cuadrado, Anchura de la caja aprox.:37.00mm, Cronómetro:Sí, Tipo de cierre:Hebilla de pulsera, Función de la fecha:Sí, Color del dial:LCD, Tiempo dual:Dual Time, Género:Hombre, Cristal:Acrylic, Nombre del modelo:Sports Gear, Movimiento:Cuarzo , Color de correa:Negro, Tipo de correa:Plastic/Resin Strap, Resistencia al agua:100 metros, Peso (grs):37.00, EAN:4971850437253, Garantía:2 años, Embalaje:Embalaje Casio, NPF:W-800H-1AVES.",
-	"url": "src/assets/img/casio/01.jpg",
+	"url": "/img/casio/01.jpg",
         "stock": 20,
 	"price": 33
 	},
@@ -15,7 +15,7 @@
         "id": 2,
         "title": "Reloj para Hombre Casio GA-2100-1A1ER",
         "description": "Marca:Casio, Analógico/Digital:Analógico, Profundiad aproximada de la caja:11.80mm, Material de la caja:Plástico/Resina, Forma de la caja:Redondo, Anchura de la caja aprox.:45.40mm, Tipo de cierre:Hebilla de pulsera, Color del dial:Negro, Género:Hombre, Cristal:Mineral, Color de correa:Negro, Tipo de correa:Plastic/Resin Strap, Resistencia al agua:200 metros, Peso (grs):51.00, EAN:4549526241659, Garantía:2 years, Embalaje:Embalaje Casio, NPF:GA-2100-1A1ER.",
-        "url": "src/assets/img/casio/02.jpg",
+        "url": "/img/casio/02.jpg",
         "stock": 28,
         "price": 116
 	},
@@ -25,7 +25,7 @@
         "id": 3,
         "title": "Reloj para Unisex Casio CORE MW-240-4BVEF",
         "description": "Marca:Casio, Analógico/Digital:Analógico, Profundiad aproximada de la caja:10.00mm, Material de la caja:Plástico/Resina, Forma de la caja:Redondo, Anchura de la caja aprox.:42.00mm, Tipo de cierre:Hebilla de pulsera, Color del dial:Negro, Tiempo dual:None, Género:Unisex, Cristal:Acrylic, Nombre del modelo:CORE, Movimiento:Cuarzo, Color de correa:Negro, Tipo de correa:Rubber Strap, Resistencia al agua:50 metros, Peso (grs):35.00, EAN:4549526102486, Garantía:2 años, Embalaje:Embalaje Casio, NPF:MW-240-4BVEF.",
-        "url": "src/assets/img/casio/03.jpg",
+        "url": "/img/casio/03.jpg",
         "stock": 30,
         "price": 25
 	},
@@ -35,7 +35,7 @@
         "id": 4,
         "title": "Reloj para Hombre Citizen Endeavour AW1428-53X",
         "description": "Marca:Citizen, Profundiad aproximada de la caja:14.00mm, Material de la caja:Acero inoxidable, Forma de la caja:Redondo, Anchura de la caja aprox.:45.00mm, Tipo de cierre:Cierre oculto, Función de la fecha:Sí, Color del dial:Verde, Tiempo dual:None, Género:Hombre, Cristal:Mineral, Marcadores de hora:Barras, Manos fluorescentes:Sí, Nombre del modelo:Endeavour, Movimiento del calibre:J810, Movimiento:Eco-drive, Color de correa:Plata, Tipo de correa:Pulsera de metal, Resistencia al agua:200 metros, Peso (grs):198.45, EAN:4974374288707, Garantía:5 años, Embalaje:Embalaje Citizen, NPF:AW1428-53X.",
-        "url": "src/assets/img/citizen/01.jpg",
+        "url": "/img/citizen/01.jpg",
         "stock": 10,
         "price": 375
 	},
@@ -45,7 +45,7 @@
         "id": 5,
         "title": "Reloj Cronógrafo para Hombre Citizen Navihawk AT JY8037-50E",
         "description": "Marca:Citizen, Alarma:Sí, Luz trasera:Sí, Profundiad aproximada de la caja:14.00mm, Material de la caja:Acero inoxidable, Forma de la caja:Redondo, Anchura de la caja aprox.:46.00mm, Cronómetro:Sí, Tipo de cierre:Cierre de botón, Función de la fecha:Sí, Color del dial:Negro, Género:Hombre, Manos fluorescentes:Sí, Nombre del modelo:Navihawk AT, Movimiento:Eco-drive, Controlador de radio:Sí, Tipo de piedra:Ninguno, Color de correa:Negro, Tipo de correa:Mesh Bracelet, Resistencia al agua:200 metros, Peso (grs):0.00, EAN:4974374249746, Garantía:5 años, Embalaje:Embalaje Citizen, NPF:JY8037-50E.",
-        "url": "src/assets/img/citizen/02.jpg",
+        "url": "/img/citizen/02.jpg",
         "stock": 5,
         "price": 614
 	},
@@ -55,7 +55,7 @@
         "id": 6,
         "title": "Reloj Cronógrafo para Hombre Citizen Red Arrows A-T AT8060-09E",
         "description": "Marca:Citizen, Profundiad aproximada de la caja:12.00mm, Material de la caja:Acero inoxidable, Forma de la caja:Redondo, Anchura de la caja aprox.:43.00mm, Cronómetro:Sí, Tipo de cierre:Hebilla de pulsera, Función de la fecha:Sí, Color del dial:Negro, Género:Hombre, Cristal:Zafiro, Marcadores de hora:Barras, Nombre del modelo:Red Arrows A-T, Movimiento:Eco-drive, Controlador de radio:Sí, Tipo de piedra:Ninguno, Color de correa:Negro, Tipo de correa:Pulsera de cuero, Resistencia al agua:200 metros, Peso (grs):0.00, EAN:4974374228260, Garantía:5 años, Embalaje:Embalaje Citizen, NPF:AT8060-09E.",
-        "url": "src/assets/img/citizen/03.jpg",
+        "url": "/img/citizen/03.jpg",
         "stock": 2,
         "price": 525
 	},
@@ -65,7 +65,7 @@
         "id": 7,
         "title": "Reloj para Hombre Seiko Presage Cocktail The Aviation SRPJ13J1",
         "description": "Marca:Seiko, Analógico/Digital:Analógico, Profundiad aproximada de la caja:11.80mm, Material de la caja:Acero inoxidable, Forma de la caja:Redondo, Anchura de la caja aprox.:39.50mm, Tipo de cierre:Despliegue, Color del dial:Azul, Caja de exposición:Sí, Género:Hombre, Cristal:Hardlex, Nombre del modelo:Presage Cocktail The Aviation, Movimiento:Automático, Color de correa:Plata, Tipo de correa:Pulsera de metal, Resistencia al agua:50 metros, Peso (grs):130.00, EAN:4954628245939, Garantía:2 Years, Embalaje:Embalaje Seiko, NPF:SRPJ13J1.",
-        "url": "src/assets/img/seiko/01.jpg",
+        "url": "/img/seiko/01.jpg",
         "stock": 5,
         "price": 453
 	},
@@ -75,7 +75,7 @@
         "id": 8,
         "title": "Reloj Cronógrafo para Hombre Seiko Speedtimer Solar Chronograph SSC813P1",
         "description": "Marca:Seiko, Analógico/Digital:Analógico, Profundiad aproximada de la caja:13.30mm, Material de la caja:Acero inoxidable, Forma de la caja:Redondo, Anchura de la caja aprox.:39.00mm, Cronómetro:Sí, Tipo de cierre:Despliegue, Color del dial:Blanco, Tiempo dual:None, Género:Hombre, Cristal:Zafiro, Manos fluorescentes:Sí, Nombre del modelo:Speedtimer Solar Chronograph, Movimiento del calibre:V192, Movimiento:Solar, Color de correa:Plata, Tipo de correa:Pulsera de metal, Resistencia al agua:100 metros, Peso (grs):161.00, EAN:4954628244512, Garantía:2 Years, Embalaje:Embalaje Seiko, NPF:SSC813P1.",
-        "url": "src/assets/img/seiko/02.jpg",
+        "url": "/img/seiko/02.jpg",
         "stock": 2,
         "price": 686
 	},
@@ -85,7 +85,7 @@
         "id": 9,
         "title": "Reloj Seiko SUR377P1",
         "description": "Marca:Seiko, Analógico/Digital:Analógico, Profundiad aproximada de la caja:8.00mm, Material de la caja:Titanio, Forma de la caja:Redondo, Anchura de la caja aprox.:40.00mm, Tipo de cierre:Clasp, Color del dial:Negro, Tiempo dual:None, Género:Hombre, Cristal:Zafiro, Manos fluorescentes:Sí, Nombre del modelo:Core (Titanium). Movimiento del calibre:6N52, Movimiento:Cuarzo, Color de correa:Gris, Tipo de correa:Pulsera de metal, Resistencia al agua:Resistente al agua, Peso (grs):74.00, EAN:4954628238887, Garantía:2 años, Embalaje:Embalaje Seiko, NPF:SUR377P1.",
-        "url": "src/assets/img/seiko/03.jpg",
+        "url": "/img/seiko/03.jpg",
         "stock": 10,
         "price": 360
 	}

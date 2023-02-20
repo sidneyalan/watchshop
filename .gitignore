@@ -1,14 +1,8 @@
 #No mostar los archivos de pruebas
-Api.jsx
-backup.jsx
-pruebas.jsx
-copiaItem.jsx
-copiaItemDetail.jsx
-copiaNavbar.jsx
-Home.jsx
-./containers/copiaItemDetailContainer.jsx
-./containers/copiaListContainer.jsx
-otracopia.jsx
+
+
+./containers/ItemListContainerBAK.jsx
+./components/ItemBack.jsx
 # Logs
 logs
 *.log

@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
+
+//COMPONENTE QUE MUESTRA EL DETALLE DEL PRODUCTO
 const ItemDetail = ({ relog, stock }) => {
       return (
-  
-           
+  <>
             <div className="container py-5">
             <div className="row px-xl-5">
             <div className="col-lg-5 pb-5">
@@ -29,7 +30,7 @@ const ItemDetail = ({ relog, stock }) => {
           </div>
           </div>
           </div>
-          
+</>  
        
   );
 
