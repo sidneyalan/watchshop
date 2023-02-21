@@ -18,15 +18,11 @@ WhatchShop es un ecommerce dedicado a la venta de relog de marcas de alta gama, 
 Para la segunda pre entrega se configura en App.js el routing usando un BrowserRouter de la aplicación con react-router-dom
 
 Se creron los componentes:
-Navbar con cart
-Catálogo
-Detalle de producto
-<<<<<<< HEAD
-=======
-
->>>>>>> 237e632cbffe2085e14b501234aa29f418005f6a
-
-
-
+- Navbar con cart
+- Catálogo
+- Detalle de producto
 
 El mismo seguira expandiendose a la medida del transcurso de las clases.
+
+Una muestra de la funcionalidad.
+![Alt text](GIF-min.gif)

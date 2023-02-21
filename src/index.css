@@ -18,7 +18,7 @@ body {
   height: 30px;
   margin: 0 auto;
   max-width: 100%;
-  background: url(./src/assets/img/watchshop-logo.svg) no-repeat left center;
+  background: url(/img/watchshop-logo.svg) no-repeat left center;
   background-size: contain;
 }
 .nav-item {
