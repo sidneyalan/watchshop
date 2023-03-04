@@ -4,20 +4,21 @@ import Item from "./Item";
 
 
 
-const ItemList = ({ items }) => {
+const ItemList = ({ relojes }) => {
+  
   return (
 <> 
      <div className="itemlist">
-        {items.map((relog) => (
+        {relojes.map((reloj) => (
           <Item
-            key={relog.id}
-            id={relog.id}
-            title={relog.title}
-            description={relog.description}
-            price={relog.price}
-            stock={relog.stock}
-            category={relog.category}
-            url={relog.url}
+            key={reloj.id}
+            id={reloj.id}
+            title={reloj.title}
+            description={reloj.description}
+            price={reloj.price}
+            stock={reloj.stock}
+            category={reloj.category}
+            url={reloj.url}
           />
             
         ))}

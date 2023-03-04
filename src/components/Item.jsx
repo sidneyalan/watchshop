@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 //COMPONENTE QUE MUESTRA TODOS LOS PRODUCTOS DE LA TIENDA
 const Item = ({ id, url, title, stock, category,  price }) => {
+  
   return (
     <>
                 <div className="card">

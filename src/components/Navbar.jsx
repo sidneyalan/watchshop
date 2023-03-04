@@ -19,9 +19,6 @@ function Navbar() {
         <li className="nav-item">
         <Link to={"/catalogue"} className="nav-link">Shop</Link>
         </li>
-        <li className="nav-item">
-        <Link to={"/contact"} className="nav-link">Contacto</Link>
-        </li>
         <li className="nav-item dropdown">
         <Link to={"/"} className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorias

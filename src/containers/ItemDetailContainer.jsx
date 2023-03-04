@@ -1,12 +1,10 @@
-import { useEffect } from 'react'
+/*import { useEffect } from 'react'
 import ItemDetail from "../components/ItemDetail";
 import { useState } from "react";
 import Products from "../products.json";
-import { useParams } from "react-router";
+import { useParams } from "react-router";*/
 
-
-
-const ItemDetailContainer = () => {
+/*const ItemDetailContainer = () => {
   const { id } = useParams();
   const [relog, setRelog] = useState({});
 
@@ -32,11 +30,30 @@ const ItemDetailContainer = () => {
   }
   useEffect(()=>{
     fetchingProducts()
-  },[id])
+  },[id])*/
+  import ItemDetail from "../components/ItemDetail";
+  import { useState, useEffect } from "react";
+  import { getFirestore, collection, getDocs } from "firebase/firestore";
+
+
+  const ItemDetailContainer = () => {
+    const [data, setData] = useState([]);
+    useEffect(() => {
+      const db = getFirestore();
+      const relojesCollection = collection(db, "reloj");
+      getDocs(relojesCollection).then((querySnapshot) => {
+        const relojes = querySnapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
+        setData(relojes);
+      });
+    }, []);
+
+
   return (
     <>
-    <ItemDetail relog={relog}/>
-    
+    <ItemDetail relojes={data} />
     </>
   )
 };

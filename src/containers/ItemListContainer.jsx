@@ -1,52 +1,36 @@
-import { useEffect, useState } from 'react'
+/*import { useEffect, useState } from 'react'
 
 import ItemList from "../components/ItemList";
 import Products from "../products.json";
+import { useParams } from "react-router-dom";*/
+
+import { useState, useEffect } from "react";
+import ItemList from "../components/ItemList";
 import { useParams } from "react-router-dom";
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
-
-
-const ItemListContainer = ({ greeting }) => {
-  const [items, setItems] = useState([])
-  
+const ItemListContainer = () => {
+  const [relojes, setrelojes] = useState([]);
   const { category } = useParams();
 
-  const getProducts = () => {
-    return new Promise((resolve, reject) => {
-      if (Products.length === 0) {
-        reject(new Error("No hay Productos"));
-      }
-      setTimeout(() => {
-        resolve(Products);
-      }, 2000);
+  useEffect(() => {
+    const db = getFirestore();
+    const relojesCollection = collection(db, "reloj");
+    getDocs(relojesCollection).then((querySnapshot) => {
+      const relojes = querySnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id,
+      }));
+      setrelojes(relojes);
     });
-  };
+  }, []);
 
-  async function fetchingProducts() {
-    try {
-      const datosFetched = await getProducts();
-      setItems(datosFetched)
-    } catch (err) {
-      console.log(err);
-    }
-  }
-  useEffect(()=>{
-
-    fetchingProducts()
-  },[])
-
-  const catFilter = Products.filter((items) => items.category === category);
+  const catFilter = relojes.filter((reloj) => reloj.category === category);
   
   return (
     <>
   <div className='container text-center'>
-    <div className='row'>
-      <div className='col-md-12'>
-        <h2>{greeting}</h2>
-        
-      </div>
-    </div>
-    {category ? <ItemList items={catFilter} />  : <ItemList items={items} />}
+    {category ? <ItemList relojes={catFilter} />  : <ItemList relojes={relojes} />}
   </div>
   </>
   );

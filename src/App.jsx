@@ -3,12 +3,12 @@ import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
-import Contact from "./components/Contact";
-
+import { ShoppingCartProvider } from "./context/ShoppingCartContext.jsx";
 
 function App() {
 
   return (
+<ShoppingCartProvider>
     <BrowserRouter>
       <NavBar />
       <img src='/img/banner.jpg' width={"100%"} />
@@ -17,12 +17,10 @@ function App() {
         <Route exact path="/catalogue" element={<ItemListContainer />} />
         <Route exact path="/category/:category" element={<ItemListContainer />} />
         <Route exact path="/item/:id" element={<ItemDetailContainer />} />
-        <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
-
-
+    </ShoppingCartProvider>
 
   );
 }
