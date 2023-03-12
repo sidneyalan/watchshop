@@ -1,11 +1,7 @@
 import React from 'react';
 import Item from "./Item";
 
-
-
-
 const ItemList = ({ relojes }) => {
-  
   return (
 <> 
      <div className="itemlist">
@@ -22,7 +18,6 @@ const ItemList = ({ relojes }) => {
           />
             
         ))}
-
 </div>
 
   </>

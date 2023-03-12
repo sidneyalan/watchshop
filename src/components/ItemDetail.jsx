@@ -1,16 +1,16 @@
-/*import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 
-const ItemDetail = ({ relog, stock }) => {*/
-
-import { useParams } from "react-router-dom";
-import ItemCount from "./ItemCount";
-
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { CartContext } from "../context/Context";
 
 const ItemDetail = ({ relojes }) => {
+const {addToCart} = useContext(CartContext);
+
+const handleAddToCart = (count) =>{
+  addToCart(producto, count);
+}
   const { id } = useParams();
 
   const [producto, setProducto] = useState([]);
@@ -49,13 +49,14 @@ const ItemDetail = ({ relojes }) => {
   
             <div className="col-lg-7 pb-5">
             <h3 className="font-weight-semi-bold">{reloj.title}</h3>
-            <h3 className="font-weight-semi-bold mb-4">{reloj.price}</h3>
             <p className="mb-4">{reloj.description}</p>
+            <h3 className="font-weight-semi-bold mb-4">Precio: {reloj.price}</h3>
             <p className="mb-4">Stock: {reloj.stock}</p>
-            <ItemCount  stock={reloj.stock}
+            <ItemCount onAddToCart={handleAddToCart} stock={reloj.stock}
                   id={reloj.id}
                   price={reloj.price}
-                  name={reloj.name}
+                  title={reloj.title}
+                  url={reloj.url}
             />
           </div>
           </div>

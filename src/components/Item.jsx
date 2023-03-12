@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 //COMPONENTE QUE MUESTRA TODOS LOS PRODUCTOS DE LA TIENDA
 const Item = ({ id, url, title, stock, category,  price }) => {
   
+  ///////////////   LISTADO DE PRODUCTOS ////////////////////////////
   return (
     <>
                 <div className="card">
@@ -19,8 +20,8 @@ const Item = ({ id, url, title, stock, category,  price }) => {
                     </div>
                     </div>
                     <div className="card-footer d-flex justify-content-between bg-light border">
-                    <Link to={`/item/${id}`}><button className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver</button></Link>
-                    <button className="btn btn-sm text-dark p-0"><i className="fas fa-shopping-cart text-primary mr-1"></i>Agregar</button>
+                    <Link to={`/item/${id}`}>
+                    <button className="btn btn-sm text-dark p-0"><i className="fas fa-eye text-primary mr-1"></i>Ver Detalle</button></Link>
                     </div>
                     </div>
                 </div>

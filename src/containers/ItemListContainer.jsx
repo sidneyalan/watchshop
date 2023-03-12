@@ -1,9 +1,3 @@
-/*import { useEffect, useState } from 'react'
-
-import ItemList from "../components/ItemList";
-import Products from "../products.json";
-import { useParams } from "react-router-dom";*/
-
 import { useState, useEffect } from "react";
 import ItemList from "../components/ItemList";
 import { useParams } from "react-router-dom";
