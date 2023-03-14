@@ -6,7 +6,6 @@ export const CartContext = createContext();
 export const CartProvider = ({ children }) => {
 
   const [cart, setCart] =  useState([]);
-  const [qnt, setQnt] = useState(0);
 
   const removeItem = (id) => {
     Swal.fire({
@@ -17,13 +16,13 @@ export const CartProvider = ({ children }) => {
     }).then((result) => {
       if (result.isConfirmed) {
         setCart(cart.filter((y) => y.id !== id));
-        setCart ([]);
+     
         Swal.fire(
           'Eliminado',
           'El producto ha sido eliminado correctamente.',
           'success'
         );
-        setCart ([]);
+   
       }
     });
   };
@@ -32,13 +31,13 @@ export const CartProvider = ({ children }) => {
     setCart ([])
   };
   
-  const total = (cart) => {
-    let suma = 0;
-    for (let i = 0; i < cart.length; i++) {
-      suma = suma + cart[i].quantity * cart[i].price;
-    }
-    return suma;
-  };
+  const total = () => {
+    let total = 0;
+    cart.forEach(prod => {
+      total = total + prod.price * prod.quantity
+    })
+    return total;
+  }
 
   const isInCart = (cart, item) => {
     return cart.some( x => x.id === item.id )
@@ -66,7 +65,7 @@ export const CartProvider = ({ children }) => {
   };
   return (
     <>
-    <CartContext.Provider value={{cart, setCart, removeItem, isInCart, total, clear, qnt, setQnt, addItem}}>
+    <CartContext.Provider value={{cart, setCart, removeItem, isInCart, total, clear, addItem}}>
       {children}
     </CartContext.Provider>
     </>

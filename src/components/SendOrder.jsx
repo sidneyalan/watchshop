@@ -1,8 +1,9 @@
   import { collection, getFirestore, addDoc } from "firebase/firestore";
   import { useState } from "react";
   import Swal from "sweetalert2";
-  
+
   const SendOrder = () => {
+  
     const [orderId, setOrderId] = useState(null);
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -22,6 +23,7 @@
         setEmail(" ");
         setName ( " " );
         setConfirm ( " " );
+        setCart ([]);
       }
 
     };

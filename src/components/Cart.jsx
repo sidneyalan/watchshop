@@ -4,19 +4,9 @@ import { CartContext } from "../context/Context";
 
 
 const Cart = () => {
-  const {cart, setCart, removeItem} = useContext(CartContext);
+  const {cart, setCart, removeItem, clear, total} = useContext(CartContext);
 
-  const [totalPrice, setTotalPrice] = useState(0);
-
-  useEffect(() => {
-    if (cart.length > 0) {
-      setTotalPrice(
-        cart
-          .map((product) => product.price * product.quantity)
-          .reduce((total, valor) => total + valor)
-      );
-    }
-  }, [cart]);
+ 
 
   return (
     <>
@@ -55,10 +45,9 @@ const Cart = () => {
          </tbody>
          </table>
          <div className="card-header bg-secondary border-0 right py-3">
-        <h4 className="font-weight-semi-bold m-0 ">Total: ${totalPrice}</h4>
-          <Link to="/order" className="btn btn-primary">
-            Realizar compra
-          </Link>
+        <h4 className="font-weight-semi-bold m-0 ">Total: ${total()}</h4>
+          <Link to="/order" className="btn btn-primary">COMPRAR</Link>
+          <button className="btn btn-sm btn-primary" onClick={() => clear()}>VACIAR CARRITO</button>
         </div>
          </div>
          </div>
