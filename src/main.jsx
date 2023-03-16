@@ -12,12 +12,12 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDk_hcrntIcqdRSdld9HISx2u3_6XkkJVE",
-  authDomain: "shopwatch-b127b.firebaseapp.com",
-  projectId: "shopwatch-b127b",
-  storageBucket: "shopwatch-b127b.appspot.com",
-  messagingSenderId: "51121731145",
-  appId: "1:51121731145:web:20c75e05cf684683493198"
+  apiKey: "AIzaSyDIY7XT6TPdIT5LEiWuFQmAZOCsfL6R9qM",
+  authDomain: "shopwatch-a9d44.firebaseapp.com",
+  projectId: "shopwatch-a9d44",
+  storageBucket: "shopwatch-a9d44.appspot.com",
+  messagingSenderId: "802038247496",
+  appId: "1:802038247496:web:fc9331f11f75c65b4a287d"
 };
 
 // Initialize Firebase

@@ -27,6 +27,7 @@ function Navbar() {
             <li><Link to={`/category/${"Casio"}`} className="dropdown-item">Casio</Link></li>
             <li><Link to={`/category/${"Citizen"}`} className="dropdown-item">Citizen</Link></li>
             <li><Link to={`/category/${"Seiko"}`} className="dropdown-item">Seiko</Link></li>
+            <li><Link to={`/category/${"Tommy Hilfiger"}`} className="dropdown-item">Tommy Hilfiger</Link></li>
           </ul>
         </li>
       </ul>
