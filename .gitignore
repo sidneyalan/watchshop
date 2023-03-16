@@ -1,9 +1,8 @@
 #No mostar los archivos de pruebas
-componente1.jsx
-componente2.jsx
-ejercicios.jsx
 
 
+./containers/ItemListContainerBAK.jsx
+./components/ItemBack.jsx
 # Logs
 logs
 *.log

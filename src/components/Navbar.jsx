@@ -1,33 +1,32 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
+    <div className="container">
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
     <div className="container-fluid">
-    <a className="navbar-brand logo" title='Home' alt='Home' href="#"></a>
+    <Link to={"/"} className="navbar-brand logo" title='Home' alt='Home'></Link>
     <div className="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
 <CartWidget />
     <ul className="navbar-nav">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#">Home</a>
+        <Link to={"/catalogue"} className="nav-link active" aria-current="page">Home</Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Shop</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="#">Contacto</a>
+        <Link to={"/catalogue"} className="nav-link">Shop</Link>
         </li>
         <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <Link to={"/"} className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categorias
-          </a>
+        </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">Casio</a></li>
-            <li><a className="dropdown-item" href="#">Citizen</a></li>
-            <li><a className="dropdown-item" href="#">Seiko</a></li>
+            <li><Link to={`/category/${"Casio"}`} className="dropdown-item">Casio</Link></li>
+            <li><Link to={`/category/${"Citizen"}`} className="dropdown-item">Citizen</Link></li>
+            <li><Link to={`/category/${"Seiko"}`} className="dropdown-item">Seiko</Link></li>
           </ul>
         </li>
       </ul>
@@ -35,7 +34,7 @@ function Navbar() {
     </div>
   </div>
 </nav>
-
+</div>
 </>
   );
 }
