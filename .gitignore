@@ -1,8 +1,4 @@
 #No mostar los archivos de pruebas
-
-
-./containers/ItemListContainerBAK.jsx
-./components/ItemBack.jsx
 # Logs
 logs
 *.log
